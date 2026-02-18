@@ -8,12 +8,13 @@ body {
     font-family: "Segoe UI", Arial, sans-serif;
     background: #f3f4f6;
     color: #111827;
+    padding-top: 90px; /* Added to prevent header overlap */
 }
 
 header {
     background: #111827;
     color: white;
-    padding: 18px 20px;   /* Reduced from 40px */
+    padding: 18px 20px;
     text-align: center;
 
     position: fixed;
