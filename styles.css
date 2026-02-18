@@ -18,7 +18,7 @@ body {
 header {
     background: #111827;
     color: white;
-    padding: 20px; /* Balanced top/bottom */
+    padding: 20px;
     text-align: center;
 
     position: fixed;
@@ -32,19 +32,20 @@ header {
 /* ================= SECTIONS ================= */
 section {
     max-width: 1100px;
-    margin: 60px auto; /* Equal vertical spacing */
+    margin: 60px auto; /* space between sections */
     padding: 0 20px;
 }
 
+/* ================= HEADINGS ================= */
 h2 {
     text-align: center;
-    margin-bottom: 30px; /* Balanced spacing below title */
+    margin: 40px 0 20px; /* 40px above, 20px below for balance */
 }
 
 /* Centered elements (inputs, labels) */
 .center {
     text-align: center;
-    margin-bottom: 30px;
+    margin: 20px 0; /* consistent spacing above/below */
 }
 
 /* ================= GRID & CARDS ================= */
@@ -52,6 +53,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px;
+    margin-top: 0; /* remove extra spacing above grid */
 }
 
 .card {
@@ -60,6 +62,7 @@ h2 {
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     text-align: center;
+    margin-top: 0; /* remove extra spacing inside grid */
 }
 
 /* ================= CLOCK ================= */
@@ -112,10 +115,10 @@ input[type="date"],
     font-size: 14px;
 }
 
-/* ================= MEDIA QUERIES (Optional for smaller screens) ================= */
+/* ================= MEDIA QUERIES ================= */
 @media (max-width: 600px) {
     body {
-        padding-top: 100px; /* Header height may increase on small screens */
+        padding-top: 100px; /* header height may increase */
     }
 
     .grid {
@@ -127,10 +130,10 @@ input[type="date"],
     }
 
     h2 {
-        margin-bottom: 20px;
+        margin: 30px 0 15px; /* smaller screens, reduce spacing */
     }
 
     .center {
-        margin-bottom: 20px;
+        margin: 15px 0;
     }
 }
