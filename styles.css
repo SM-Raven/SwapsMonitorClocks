@@ -1,20 +1,24 @@
+/* ================= GLOBAL RESET ================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ================= BODY ================= */
 body {
     font-family: "Segoe UI", Arial, sans-serif;
     background: #f3f4f6;
     color: #111827;
-    padding-top: 90px; /* Added to prevent header overlap */
+    padding-top: 80px; /* Space for fixed header */
+    line-height: 1.5;
 }
 
+/* ================= HEADER ================= */
 header {
     background: #111827;
     color: white;
-    padding: 18px 20px;
+    padding: 20px; /* Balanced top/bottom */
     text-align: center;
 
     position: fixed;
@@ -25,22 +29,25 @@ header {
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
+/* ================= SECTIONS ================= */
 section {
     max-width: 1100px;
-    margin: 20px auto;
+    margin: 60px auto; /* Equal vertical spacing */
     padding: 0 20px;
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px; /* Balanced spacing below title */
 }
 
+/* Centered elements (inputs, labels) */
 .center {
     text-align: center;
     margin-bottom: 30px;
 }
 
+/* ================= GRID & CARDS ================= */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -55,12 +62,14 @@ h2 {
     text-align: center;
 }
 
+/* ================= CLOCK ================= */
 .clock {
     font-size: 26px;
     font-weight: bold;
     margin-top: 10px;
 }
 
+/* ================= INPUTS ================= */
 input[type="time"],
 input[type="date"],
 #employeeSearch {
@@ -71,6 +80,7 @@ input[type="date"],
     margin-top: 15px;
 }
 
+/* ================= TEXT & LABELS ================= */
 .pretty {
     margin-top: 8px;
     font-weight: 600;
@@ -89,6 +99,7 @@ input[type="date"],
     margin-top: 4px;
 }
 
+/* ================= EMPLOYEE OFFICE LIST ================= */
 .employee-office ul {
     list-style: none;
     margin-top: 15px;
@@ -99,4 +110,27 @@ input[type="date"],
     padding: 6px 0;
     border-bottom: 1px solid #e5e7eb;
     font-size: 14px;
+}
+
+/* ================= MEDIA QUERIES (Optional for smaller screens) ================= */
+@media (max-width: 600px) {
+    body {
+        padding-top: 100px; /* Header height may increase on small screens */
+    }
+
+    .grid {
+        gap: 15px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .center {
+        margin-bottom: 20px;
+    }
 }
