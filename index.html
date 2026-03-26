@@ -1,99 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Office Clocks</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Office Clocks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    <body>
+<header>
+    <h1>Office Clocks</h1>
+    <p>Global Office Time</p>
+</header>
 
-        <header>
-            <h1>Office Clocks</h1>
-            <p>Global Office Time</p>
-        </header>
+<!-- ================= LIVE CLOCKS ================= -->
+<section>
+    <div class="section-header">
+        <h2>Live Clocks</h2>
+        <div class="search-box">
+            <input type="text" placeholder="Search city">
+            <button>Search</button>
+        </div>
+    </div>
 
-        <!-- ================= LIVE CLOCKS ================= -->
+    <div class="grid">
+        <div class="card">
+            <h3>New York</h3>
+            <div class="clock" id="nyClock"></div>
+        </div>
 
-        <section>
-            <h2>Live Clocks</h2>
-            <div class="grid">
+        <div class="card">
+            <h3>London</h3>
+            <div class="clock" id="lonClock"></div>
+        </div>
 
-                <div class="card">
-                    <h3>New York</h3>
-                    <div class="clock" id="nyClock"></div>
-                </div>
+        <div class="card">
+            <h3>Delhi</h3>
+            <div class="clock" id="delClock"></div>
+        </div>
 
-                <div class="card">
-                    <h3>London</h3>
-                    <div class="clock" id="lonClock"></div>
-                </div>
+        <div class="card">
+            <h3>Manila</h3>
+            <div class="clock" id="manClock"></div>
+        </div>
+    </div>
+</section>
 
-                <div class="card">
-                    <h3>Delhi</h3>
-                    <div class="clock" id="delClock"></div>
-                </div>
+<!-- ================= TIME CONVERTER ================= -->
+<section>
+    <div class="section-header">
+        <h2>Time Converter</h2>
+        <div class="meeting-date">
+            <label for="meetingDate">Meeting Date:</label>
+            <input type="date" id="meetingDate">
+        </div>
+    </div>
 
-                <div class="card">
-                    <h3>Manila</h3>
-                    <div class="clock" id="manClock"></div>
-                </div>
+    <div class="grid">
+        <div class="card">
+            <h3>New York</h3>
+            <input type="time" id="nyInput">
+            <div class="pretty" id="nyPretty"></div>
+            <div class="day" id="nyDay"></div>
+            <div class="date" id="nyDate"></div>
+        </div>
 
-            </div>
-        </section>
+        <div class="card">
+            <h3>London</h3>
+            <input type="time" id="lonInput">
+            <div class="pretty" id="lonPretty"></div>
+            <div class="day" id="lonDay"></div>
+            <div class="date" id="lonDate"></div>
+        </div>
 
-        <!-- ================= TIME CONVERTER ================= -->
+        <div class="card">
+            <h3>Delhi</h3>
+            <input type="time" id="delInput">
+            <div class="pretty" id="delPretty"></div>
+            <div class="day" id="delDay"></div>
+            <div class="date" id="delDate"></div>
+        </div>
 
-        <section>
-            <h2>Time Converter</h2>
+        <div class="card">
+            <h3>Manila</h3>
+            <input type="time" id="manInput">
+            <div class="pretty" id="manPretty"></div>
+            <div class="day" id="manDay"></div>
+            <div class="date" id="manDate"></div>
+        </div>
+    </div>
+</section>
 
-            <div class="center">
-                <label>Select Meeting Date:</label>
-                <input type="date" id="meetingDate">
-            </div>
-
-            <div class="grid">
-
-                <div class="card">
-                    <h3>New York</h3>
-                    <input type="time" id="nyInput">
-                    <div class="pretty" id="nyPretty"></div>
-                    <div class="day" id="nyDay"></div>
-                    <div class="date" id="nyDate"></div>
-                </div>
-
-                <div class="card">
-                    <h3>London</h3>
-                    <input type="time" id="lonInput">
-                    <div class="pretty" id="lonPretty"></div>
-                    <div class="day" id="lonDay"></div>
-                    <div class="date" id="lonDate"></div>
-                </div>
-
-                <div class="card">
-                    <h3>Delhi</h3>
-                    <input type="time" id="delInput">
-                    <div class="pretty" id="delPretty"></div>
-                    <div class="day" id="delDay"></div>
-                    <div class="date" id="delDate"></div>
-                </div>
-
-                <div class="card">
-                    <h3>Manila</h3>
-                    <input type="time" id="manInput">
-                    <div class="pretty" id="manPretty"></div>
-                    <div class="day" id="manDay"></div>
-                    <div class="date" id="manDate"></div>
-                </div>
-
-            </div>
-        </section>
-        
-        <script src="script.js"></script>
-    </body>
+<script src="script.js"></script>
+</body>
 </html>
-
-
-
-
